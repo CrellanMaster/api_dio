@@ -18,7 +18,3 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('vagasanalise', 'App\Http\Controllers\APIController@index')->name('vagas.index');
 Route::get('vagasanalise/{vaga}', "App\Http\Controllers\APIController@getVaga")->name('vagas.get');
-
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
-});
